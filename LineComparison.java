@@ -14,6 +14,17 @@ class LineComparison{
 			System.out.println("Lines are not equal");
 		}
 	}
+	
+	// UC3 - Compare of two Lines
+	public static void CompareOfLines (double lengthOfLine1, double lengthOfLine2){
+		if(lengthOfLine1 == lengthOfLine2){
+			System.out.println("Lines are equal");
+		}else if(lengthOfLine1 > lengthOfLine2){
+			System.out.println("First Line is greater");
+		}else{
+			System.out.println("Second Line is greater");
+		}
+	}	
 
 	public static void main(String[] args){
 		System.out.println("Welcome to Line Comparison Computation Program");
@@ -27,6 +38,6 @@ class LineComparison{
 		double lengthofSecond = lengthOfLine(x1,y1,x2,y2);
 		System.out.println("Length of First Line " + lengthofFirst);
 		System.out.println("Length of Second Line " + lengthofSecond);
-		equalityOfLines(lengthofFirst,lengthofSecond);
+		CompareOfLines(lengthofFirst,lengthofSecond);
 	}	
 }
